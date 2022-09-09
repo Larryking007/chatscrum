@@ -2,7 +2,7 @@ import React from 'react';
 import './sign-up.css';
 import content  from '../../static/form';
 import { useForm } from 'react-hook-form';
-import { useResolver } from '@hookform/resolvers';
+import { yupResolver } from '@hookform/resolvers/yup';
 import * as  yup from 'yup';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ const schema = yup.object().shape({
   )
 
 })
-export default function signUp() {
+export default function SignUp() {
 
   const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema),

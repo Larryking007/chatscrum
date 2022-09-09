@@ -2,7 +2,7 @@ import React from 'react';
 import './sign-in.css';
 import { Link } from 'react-router-dom';
 
-export default function signIn() {
+export default function SignIn() {
   return (
     <div className="sign-in">
       <h1>Have an account already?</h1>
