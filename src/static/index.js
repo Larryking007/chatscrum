@@ -1,7 +1,7 @@
 const content = {
     inputs: [
         {
-            label: "Full name",
+            label: "Full Name",
             name: "fullname",
             type: "text"
         },
